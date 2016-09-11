@@ -16,18 +16,18 @@ var dataToSend = {
 $(document).ready(function(){
   console.log('JQuery is sourced');
 
-  $('#getInfo').on('click', function(){
-    quack.play();
+  $('.buttons').on('click', function(){
     console.log('getInfo clicked');
+    $('#answer');
 
-    firstNumber = Number($('#numberOne').val());
-    secondNumber = Number($('#numberTwo').val());
-    operatorChosen = $('#operator').val();
-    console.log('numberOne =', firstNumber + ' | ' + 'numberTwo =', secondNumber + ' | ' + 'operator is', operatorChosen);
-    dataToSend.numOne = firstNumber;
-    dataToSend.numTwo = secondNumber;
-    getOperator();
-    ajaxPost();
+    // firstNumber = Number($('#numberOne').val());
+    // secondNumber = Number($('#numberTwo').val());
+    // operatorChosen = $('#operator').val();
+    // console.log('numberOne =', firstNumber + ' | ' + 'numberTwo =', secondNumber + ' | ' + 'operator is', operatorChosen);
+    // dataToSend.numOne = firstNumber;
+    // dataToSend.numTwo = secondNumber;
+    // getOperator();
+    // ajaxPost();
   });
 
   $('#resetAll').on('click', function () {
