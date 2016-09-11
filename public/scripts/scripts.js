@@ -1,6 +1,7 @@
 console.log('JS is sourced');
 
 var answer = 0;
+var quack = new Audio("../sounds/quack.mp3");
 
 var firstNumber;
 var secondNumber;
@@ -11,15 +12,14 @@ var dataToSend = {
   op: 'NA'
 };
 
-
-
 //////////////DOCUMENT READY/ GET INFO ON CLICK////////////////////////////////////////////
 $(document).ready(function(){
   console.log('JQuery is sourced');
 
-
   $('#getInfo').on('click', function(){
+    quack.play();
     console.log('getInfo clicked');
+
     firstNumber = Number($('#numberOne').val());
     secondNumber = Number($('#numberTwo').val());
     operatorChosen = $('#operator').val();
