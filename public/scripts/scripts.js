@@ -16,7 +16,7 @@ var dataToSend = {
 $(document).ready(function(){
   console.log('JQuery is sourced');
 
-  $('#getInfo').on('click', function(){
+  $('#getInfo ').on('click', function(){
     quack.play();
     console.log('getInfo clicked');
 
