@@ -17,7 +17,7 @@ app.listen(process.env.PORT || 3000, function(){
   console.log('server is listening on 3000');
 });
 
-app.get('/', function(req, res){
+app.get('/', urlencodedParser, function(req, res){
   console.log('base url hit');
   res.sendFile(path.resolve('public/index.html'));
 });//end base url
