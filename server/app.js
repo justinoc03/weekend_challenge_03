@@ -13,7 +13,7 @@ var sendBackAnswer = {
 };
 
 //////////////////////Server Info////////////////////////////////////////////
-app.listen('3000', 'localhost', function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log('server is listening on 3000');
 });
 
